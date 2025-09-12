@@ -1,75 +1,30 @@
-# Nuxt Minimal Starter
+# Vue 3 Account Manager
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Приложение для управления учетными записями с использованием Vue 3, Composition API, TypeScript и Pinia.
 
-## Setup
+## Особенности
 
-Make sure to install dependencies:
+- Добавление, редактирование и удаление учетных записей.
+- Поддержка двух типов учетных записей: LDAP и Локальная.
+- Валидация обязательных полей (логин и пароль для локальных учетных записей).
+- Поле "Метка" поддерживает несколько значений через разделитель `;`.
+- Возможность показать/скрыть пароль с помощью иконки глаза.
+- Сохранение данных в `localStorage` для сохранения между перезагрузками страницы.
+
+## Технологии
+
+- [Vue 3](https://vuejs.org/) + Composition API
+- [TypeScript](https://www.typescriptlang.org/)
+- [Pinia](https://pinia.vuejs.org/) для управления состоянием
+- [Vite](https://vitejs.dev/) для сборки проекта
+- [UI-компоненты](https://shadcn.io/) / кастомные компоненты для форм
+- [Iconify](https://iconify.design/) и [FontAwesome](https://fontawesome.com/) для иконок
+
+## Установка
 
 ```bash
-# npm
+git clone https://github.com/<username>/<repository-name>.git
+cd <repository-name>
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Для входа требуются логин и пароль
