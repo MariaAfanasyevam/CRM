@@ -8,9 +8,7 @@ useSeoMeta({
 const emailRef= ref('');
 const nameRef= ref('');
 const passwordRef= ref('');
-watch(emailRef, () =>{
-  console.log(emailRef.value);
-})
+
 
 const loadingStore= useLoadingStore();
 const authStore= useAuthStore();
