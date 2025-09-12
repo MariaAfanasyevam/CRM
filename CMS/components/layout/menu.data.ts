@@ -6,7 +6,7 @@ export interface IMenuItem {
 
 export const MENU_DATA: IMenuItem[] = [
     {
-        icon: 'radix-icons: dashboard',
+        icon: 'radix-icons:dashboard',
         name: 'Home',
         url: '/',
     },
