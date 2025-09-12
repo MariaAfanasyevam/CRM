@@ -53,7 +53,7 @@ const register = async() => {
           v-model="emailRef"
         />
         <UIInput
-            placeholder="Email"
+            placeholder="Password"
             type="password"
             class="mb-3"
             v-model="passwordRef"
