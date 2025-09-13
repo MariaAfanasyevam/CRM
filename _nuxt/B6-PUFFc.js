@@ -1,1 +1,0 @@
-import{e as n,r as s}from"#entry";const a={user:{email:"",name:"",status:!1}},l=n("auth",()=>{const e=s({...a});function t(){return e.value.status}function u(){e.value={...a}}function o(r){e.value={...e.value,...r}}return{user:e,isAuth:t,clear:u,set:o}}),c=n("loadingStore",()=>{const e=s(!0);function t(u){e.value=u}return{isLoading:e,setLoading:t}});export{l as a,c as u};
