@@ -2,14 +2,19 @@
   "name": "nuxt-app",
   "type": "module",
   "private": true,
+  "homepage": "https://mariaafanasyevam.github.io/CRM/",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build --outDir dist",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "predeploy": "npm run build",
+    "deploy": "npm run generate && gh-pages -d dist"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^7.0.1",
+    "@fortawesome/vue-fontawesome": "^3.1.2",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/tailwindcss": "^7.0.0-beta.0",
     "@pinia/nuxt": "^0.11.2",
@@ -32,6 +37,7 @@
   "devDependencies": {
     "@iconify-json/line-md": "^1.2.11",
     "@nuxt/icon": "^2.0.0",
-    "@types/uuid": "^10.0.0"
+    "@types/uuid": "^10.0.0",
+    "gh-pages": "^6.3.0"
   }
 }

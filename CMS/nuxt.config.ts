@@ -24,6 +24,10 @@ export default defineNuxtConfig({
   },
   pinia: {
     storesDirs: ['./store/**'],
+  },
+  app: { baseURL: '/CRM/' },
+  ssr: false,
+  nitro: {
+    preset: 'static'
   }
-
 })

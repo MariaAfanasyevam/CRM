@@ -2,9 +2,12 @@
   "name": "CMS",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://MariaAfanasyevam.github.io/CRM/",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@nuxt/image": "^1.11.0"
